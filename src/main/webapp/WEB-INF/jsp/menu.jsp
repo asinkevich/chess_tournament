@@ -1,6 +1,6 @@
 <menu>
   <li>
-    <fmt:message key="menu.news"/>
+    <a href="<spring:url value="/news" htmlEscape="true" />"><fmt:message key="menu.news"/></a>
   </li>
   <li>
     <fmt:message key="menu.program"/>
