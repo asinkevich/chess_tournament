@@ -1,0 +1,101 @@
+2012-03-20 04:14:04,325 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2012-03-20 04:14:04,507 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Tue Mar 20 04:14:04 VET 2012]; root of context hierarchy
+2012-03-20 04:14:04,705 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/applicationContext-hibernate.xml]
+2012-03-20 04:14:04,798 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/applicationContext-dataSource.xml]
+2012-03-20 04:14:05,301 INFO [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2012-03-20 04:14:05,310 INFO [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2012-03-20 04:14:05,362 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1de00761: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,sessionFactory,transactionManager,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,mbeanExporter,clinic,petclinic:type=HibernateStatistics,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2012-03-20 04:14:05,633 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - Executing SQL script from class path resource [db/hsqldb/initDB.txt]
+2012-03-20 04:14:05,645 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - Done executing SQL script from class path resource [db/hsqldb/initDB.txt] in 12 ms.
+2012-03-20 04:14:05,645 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - Executing SQL script from class path resource [db/hsqldb/populateDB.txt]
+2012-03-20 04:14:05,659 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - Done executing SQL script from class path resource [db/hsqldb/populateDB.txt] in 14 ms.
+2012-03-20 04:14:05,763 INFO [org.hibernate.cfg.Environment] - Hibernate 3.3.2.GA
+2012-03-20 04:14:05,764 INFO [org.hibernate.cfg.Environment] - hibernate.properties not found
+2012-03-20 04:14:05,767 INFO [org.hibernate.cfg.Environment] - Bytecode provider name : javassist
+2012-03-20 04:14:05,771 INFO [org.hibernate.cfg.Environment] - using JDK 1.4 java.sql.Timestamp handling
+2012-03-20 04:14:05,956 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: org.springframework.samples.petclinic.Vet -> vets
+2012-03-20 04:14:06,004 INFO [org.hibernate.cfg.HbmBinder] - Mapping collection: org.springframework.samples.petclinic.Vet.specialtiesInternal -> vet_specialties
+2012-03-20 04:14:06,006 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: org.springframework.samples.petclinic.Specialty -> specialties
+2012-03-20 04:14:06,007 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: org.springframework.samples.petclinic.Owner -> owners
+2012-03-20 04:14:06,018 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: org.springframework.samples.petclinic.Pet -> pets
+2012-03-20 04:14:06,082 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: org.springframework.samples.petclinic.PetType -> types
+2012-03-20 04:14:06,083 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: org.springframework.samples.petclinic.Visit -> visits
+2012-03-20 04:14:06,085 INFO [org.hibernate.cfg.HbmBinder] - Mapping collection: org.springframework.samples.petclinic.Owner.petsInternal -> pets
+2012-03-20 04:14:06,085 INFO [org.hibernate.cfg.HbmBinder] - Mapping collection: org.springframework.samples.petclinic.Pet.visitsInternal -> visits
+2012-03-20 04:14:06,086 INFO [org.springframework.orm.hibernate3.LocalSessionFactoryBean] - Building new Hibernate SessionFactory
+2012-03-20 04:14:06,091 INFO [org.hibernate.connection.ConnectionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2012-03-20 04:14:06,099 INFO [org.hibernate.cfg.SettingsFactory] - RDBMS: HSQL Database Engine, version: 1.8.0
+2012-03-20 04:14:06,099 INFO [org.hibernate.cfg.SettingsFactory] - JDBC driver: HSQL Database Engine Driver, version: 1.8.0
+2012-03-20 04:14:06,129 INFO [org.hibernate.dialect.Dialect] - Using dialect: org.hibernate.dialect.HSQLDialect
+2012-03-20 04:14:06,133 INFO [org.hibernate.transaction.TransactionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2012-03-20 04:14:06,135 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2012-03-20 04:14:06,135 INFO [org.hibernate.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+2012-03-20 04:14:06,136 INFO [org.hibernate.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+2012-03-20 04:14:06,136 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch size: 15
+2012-03-20 04:14:06,136 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch updates for versioned data: disabled
+2012-03-20 04:14:06,137 INFO [org.hibernate.cfg.SettingsFactory] - Scrollable result sets: enabled
+2012-03-20 04:14:06,137 INFO [org.hibernate.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+2012-03-20 04:14:06,137 INFO [org.hibernate.cfg.SettingsFactory] - Connection release mode: auto
+2012-03-20 04:14:06,138 INFO [org.hibernate.cfg.SettingsFactory] - Default batch fetch size: 1
+2012-03-20 04:14:06,138 INFO [org.hibernate.cfg.SettingsFactory] - Generate SQL with comments: disabled
+2012-03-20 04:14:06,138 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL updates by primary key: disabled
+2012-03-20 04:14:06,138 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+2012-03-20 04:14:06,138 INFO [org.hibernate.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2012-03-20 04:14:06,140 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - Using ASTQueryTranslatorFactory
+2012-03-20 04:14:06,141 INFO [org.hibernate.cfg.SettingsFactory] - Query language substitutions: {}
+2012-03-20 04:14:06,141 INFO [org.hibernate.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+2012-03-20 04:14:06,141 INFO [org.hibernate.cfg.SettingsFactory] - Second-level cache: enabled
+2012-03-20 04:14:06,141 INFO [org.hibernate.cfg.SettingsFactory] - Query cache: disabled
+2012-03-20 04:14:06,145 INFO [org.hibernate.cfg.SettingsFactory] - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2012-03-20 04:14:06,145 INFO [org.hibernate.cfg.SettingsFactory] - Optimize cache for minimal puts: disabled
+2012-03-20 04:14:06,145 INFO [org.hibernate.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+2012-03-20 04:14:06,150 INFO [org.hibernate.cfg.SettingsFactory] - Echoing all SQL to stdout
+2012-03-20 04:14:06,151 INFO [org.hibernate.cfg.SettingsFactory] - Statistics: enabled
+2012-03-20 04:14:06,151 INFO [org.hibernate.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+2012-03-20 04:14:06,151 INFO [org.hibernate.cfg.SettingsFactory] - Default entity-mode: pojo
+2012-03-20 04:14:06,151 INFO [org.hibernate.cfg.SettingsFactory] - Named query checking : enabled
+2012-03-20 04:14:06,214 INFO [org.hibernate.impl.SessionFactoryImpl] - building session factory
+2012-03-20 04:14:06,383 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+2012-03-20 04:14:06,444 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@49160709] of Hibernate SessionFactory for HibernateTransactionManager
+2012-03-20 04:14:06,490 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2012-03-20 04:14:06,512 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'petclinic:type=HibernateStatistics' has been autodetected for JMX exposure
+2012-03-20 04:14:06,521 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'petclinic:type=HibernateStatistics': registering with JMX server as MBean [petclinic:type=HibernateStatistics]
+2012-03-20 04:14:06,574 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2249 ms
+2012-03-20 04:14:06,607 INFO [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'petclinic': initialization started
+2012-03-20 04:14:06,612 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'petclinic-servlet': startup date [Tue Mar 20 04:14:06 VET 2012]; parent: Root WebApplicationContext
+2012-03-20 04:14:06,614 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/petclinic-servlet.xml]
+2012-03-20 04:14:06,854 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5c3ba2b2: defining beans [addOwnerForm,addPetForm,addVisitForm,clinicController,editOwnerForm,editPetForm,findOwnersForm,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.web.servlet.view.BeanNameViewResolver#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,visits,vets,marshaller,messageSource,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1de00761
+2012-03-20 04:14:07,147 INFO [org.springframework.oxm.jaxb.Jaxb2Marshaller] - Creating JAXBContext with classes to be bound [class org.springframework.samples.petclinic.Vets]
+2012-03-20 04:14:07,470 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/new] onto handler 'addOwnerForm'
+2012-03-20 04:14:07,470 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/new.*] onto handler 'addOwnerForm'
+2012-03-20 04:14:07,470 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/new/] onto handler 'addOwnerForm'
+2012-03-20 04:14:07,475 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/{ownerId}/pets/new] onto handler 'addPetForm'
+2012-03-20 04:14:07,475 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/{ownerId}/pets/new.*] onto handler 'addPetForm'
+2012-03-20 04:14:07,475 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/{ownerId}/pets/new/] onto handler 'addPetForm'
+2012-03-20 04:14:07,480 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/*/pets/{petId}/visits/new] onto handler 'addVisitForm'
+2012-03-20 04:14:07,480 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/*/pets/{petId}/visits/new.*] onto handler 'addVisitForm'
+2012-03-20 04:14:07,480 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/*/pets/{petId}/visits/new/] onto handler 'addVisitForm'
+2012-03-20 04:14:07,481 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Root mapping to handler 'clinicController'
+2012-03-20 04:14:07,481 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/vets] onto handler 'clinicController'
+2012-03-20 04:14:07,481 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/vets.*] onto handler 'clinicController'
+2012-03-20 04:14:07,481 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/vets/] onto handler 'clinicController'
+2012-03-20 04:14:07,482 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/{ownerId}] onto handler 'clinicController'
+2012-03-20 04:14:07,482 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/{ownerId}.*] onto handler 'clinicController'
+2012-03-20 04:14:07,482 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/{ownerId}/] onto handler 'clinicController'
+2012-03-20 04:14:07,483 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/*/pets/{petId}/visits] onto handler 'clinicController'
+2012-03-20 04:14:07,483 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/*/pets/{petId}/visits.*] onto handler 'clinicController'
+2012-03-20 04:14:07,483 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/*/pets/{petId}/visits/] onto handler 'clinicController'
+2012-03-20 04:14:07,484 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/{ownerId}/edit] onto handler 'editOwnerForm'
+2012-03-20 04:14:07,484 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/{ownerId}/edit.*] onto handler 'editOwnerForm'
+2012-03-20 04:14:07,484 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/{ownerId}/edit/] onto handler 'editOwnerForm'
+2012-03-20 04:14:07,485 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/*/pets/{petId}/edit] onto handler 'editPetForm'
+2012-03-20 04:14:07,485 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/*/pets/{petId}/edit.*] onto handler 'editPetForm'
+2012-03-20 04:14:07,485 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/*/pets/{petId}/edit/] onto handler 'editPetForm'
+2012-03-20 04:14:07,486 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/search] onto handler 'findOwnersForm'
+2012-03-20 04:14:07,486 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/search.*] onto handler 'findOwnersForm'
+2012-03-20 04:14:07,486 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/search/] onto handler 'findOwnersForm'
+2012-03-20 04:14:07,487 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners] onto handler 'findOwnersForm'
+2012-03-20 04:14:07,487 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners.*] onto handler 'findOwnersForm'
+2012-03-20 04:14:07,487 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - Mapped URL path [/owners/] onto handler 'findOwnersForm'
+2012-03-20 04:14:07,507 INFO [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'petclinic': initialization completed in 900 ms
+2012-03-20 04:21:21,121 WARN [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/letoile] in DispatcherServlet with name 'petclinic'
