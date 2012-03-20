@@ -1,0 +1,26 @@
+<menu>
+  <li>
+    News
+  </li>
+  <li>
+    Program
+  </li>
+  <li>
+    Participants
+  </li>
+  <li>
+    Regulations
+  </li>
+  <li>
+    Parties
+  </li>
+  <li>
+    Results, tables
+  </li>
+  <li>
+    Gallery
+  </li>
+  <li>
+    Contacts
+  </li>
+</menu>
