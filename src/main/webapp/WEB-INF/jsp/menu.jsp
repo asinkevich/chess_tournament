@@ -1,26 +1,26 @@
 <menu>
   <li>
-    News
+    <fmt:message key="menu.news"/>
   </li>
   <li>
-    Program
+    <fmt:message key="menu.program"/>
   </li>
   <li>
-    Participants
+    <fmt:message key="menu.participants"/>
   </li>
   <li>
-    Regulations
+    <fmt:message key="menu.regulations"/>
   </li>
   <li>
-    Parties
+    <fmt:message key="menu.parties"/>
   </li>
   <li>
-    Results, tables
+    <fmt:message key="menu.results_tables"/>
   </li>
   <li>
-    Gallery
+    <fmt:message key="menu.gallery"/>
   </li>
   <li>
-    Contacts
+    <fmt:message key="menu.contacts"/>
   </li>
 </menu>
