@@ -1,5 +1,6 @@
 <%@ include file="/WEB-INF/jsp/includes.jsp" %>
 <%@ include file="/WEB-INF/jsp/header.jsp" %>
+<%@ include file="/WEB-INF/jsp/menu.jsp" %>
 
 <h2>News</h2>
 

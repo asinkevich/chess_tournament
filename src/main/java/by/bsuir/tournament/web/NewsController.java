@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class NewsList {
+public class NewsController {
 
   @RequestMapping(value = "/news", method = RequestMethod.GET)
-  public String setupForm(Model model) {
-    return "/news";
+  public String getListOfNews(Model model) {
+    return "news/list";
   }
 }
