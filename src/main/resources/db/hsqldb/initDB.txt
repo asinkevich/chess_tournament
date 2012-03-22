@@ -53,3 +53,12 @@ CREATE TABLE visits (
 );
 alter table visits add constraint fk_visits_pets foreign key (pet_id) references pets(id);
 CREATE INDEX visits_pet_id ON visits(pet_id);
+
+
+CREATE TABLE news (
+	id INTEGER NOT NULL IDENTITY PRIMARY KEY,
+	name VARCHAR(500),
+	text VARCHAR(9999),
+	date DATE
+);
+CREATE INDEX news_name ON news(name);

@@ -1,7 +1,6 @@
 <%@ include file="/WEB-INF/jsp/includes.jsp" %>
 <%@ include file="/WEB-INF/jsp/header.jsp" %>
-
-<img src="<spring:url value="/static/images/pets.png" htmlEscape="true" />" align="right" style="position:relative;right:30px;">
+<%@ include file="/WEB-INF/jsp/menu.jsp" %>
 
 <h2><fmt:message key="welcome"/></h2>
 

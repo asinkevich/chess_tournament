@@ -8,4 +8,10 @@
 
 <body>
 
+<header>
+  <p>
+    <strong style="color: orange;">HEADER</strong>
+  </p>
+</header>
+
 <div id="main">

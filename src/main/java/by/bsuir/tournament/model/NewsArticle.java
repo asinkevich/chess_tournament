@@ -2,9 +2,12 @@ package by.bsuir.tournament.model;
 
 import org.springframework.samples.petclinic.BaseEntity;
 
+import java.util.Date;
+
 public class NewsArticle extends BaseEntity {
   private String name;
   private String text;
+  private Date date;
 
   public String getName() {
     return name;
@@ -22,11 +25,16 @@ public class NewsArticle extends BaseEntity {
     this.text = text;
   }
 
+  public Date getDate() {
+    return date;
+  }
+
+  public void setDate(Date date) {
+    this.date = date;
+  }
+
   @Override
   public String toString() {
-    return "NewsArticle{" +
-        "name='" + name + '\'' +
-        ", text='" + text + '\'' +
-        '}';
+    return getName();
   }
 }

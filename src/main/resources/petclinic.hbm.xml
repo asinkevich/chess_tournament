@@ -70,5 +70,14 @@
     <property name="description" column="description"/>
     <many-to-one name="pet" column="pet_id" class="org.springframework.samples.petclinic.Pet"/>
   </class>
+  
+  <class name="by.bsuir.tournament.model.NewsArticle" table="news">
+    <id name="id" column="id">
+      <generator class="identity"/>
+    </id>
+    <property name="name" column="name" type="string"/>
+    <property name="text" column="text" type="string"/>
+    <property name="date" column="date" type="date"/>
+  </class>
 
 </hibernate-mapping>
