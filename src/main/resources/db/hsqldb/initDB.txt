@@ -54,7 +54,6 @@ CREATE TABLE visits (
 alter table visits add constraint fk_visits_pets foreign key (pet_id) references pets(id);
 CREATE INDEX visits_pet_id ON visits(pet_id);
 
-
 CREATE TABLE news (
 	id INTEGER NOT NULL IDENTITY PRIMARY KEY,
 	name VARCHAR(500),
@@ -62,3 +61,15 @@ CREATE TABLE news (
 	date DATE
 );
 CREATE INDEX news_name ON news(name);
+
+CREATE TABLE participants (
+	id INTEGER NOT NULL IDENTITY PRIMARY KEY,
+	first_name VARCHAR(30),
+	last_name VARCHAR(30),
+	birth_year INTEGER,
+	country VARCHAR(5),
+	title VARCHAR(30),
+	points INTEGER,
+	gender VARCHAR(6)
+);
+CREATE INDEX participants_last_name ON participants(last_name);

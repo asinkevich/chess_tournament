@@ -7,7 +7,7 @@
       <fmt:message key="menu.program"/>
     </li>
     <li>
-      <fmt:message key="menu.participants"/>
+      <a href="<spring:url value="/participants" htmlEscape="true" />"><fmt:message key="menu.participants"/></a>
     </li>
     <li>
       <fmt:message key="menu.regulations"/>

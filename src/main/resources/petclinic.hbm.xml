@@ -70,14 +70,34 @@
     <property name="description" column="description"/>
     <many-to-one name="pet" column="pet_id" class="org.springframework.samples.petclinic.Pet"/>
   </class>
-  
+
   <class name="by.bsuir.tournament.model.NewsArticle" table="news">
     <id name="id" column="id">
       <generator class="identity"/>
     </id>
-    <property name="name" column="name" type="string"/>
-    <property name="text" column="text" type="string"/>
+    <property name="name" column="name"/>
+    <property name="text" column="text"/>
     <property name="date" column="date" type="date"/>
   </class>
 
+  <class name="by.bsuir.tournament.model.Participant" table="participants">
+    <id name="id" column="id">
+      <generator class="identity"/>
+    </id>
+    <property name="firstName" column="first_name"/>
+    <property name="lastName" column="last_name"/>
+    <property name="birthYear" column="birth_year" type="integer"/>
+    <property name="country" column="country">
+      <type name="org.hibernate.type.EnumType">
+        <param name="enumClass">by.bsuir.tournament.model.Country</param>
+      </type>
+    </property>
+    <property name="title" column="title"/>
+    <property name="points" column="points" type="integer"/>
+    <property name="gender" column="gender">
+      <type name="org.hibernate.type.EnumType">
+        <param name="enumClass">by.bsuir.tournament.model.Gender</param>
+      </type>
+    </property>
+  </class>
 </hibernate-mapping>

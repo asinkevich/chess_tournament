@@ -2,6 +2,7 @@ package by.bsuir.tournament.dao.hibernate;
 
 import by.bsuir.tournament.dao.TournamentDAO;
 import by.bsuir.tournament.model.NewsArticle;
+import by.bsuir.tournament.model.Participant;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;

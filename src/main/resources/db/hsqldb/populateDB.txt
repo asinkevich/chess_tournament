@@ -56,3 +56,9 @@ INSERT INTO news VALUES (1, 'Costa Concordia: Five more bodies found', 'More tha
                                                                         Italian authorities say they were found outside the ship, in a small space between the wreck and the sea bed.
                                                                         Altogether 30 bodies have now been found since the vessel ran aground off the island of Giglio on 13 January.', '1996-09-04');
 INSERT INTO news VALUES (2, 'Article 2', 'text 2', '1996-09-04');
+
+INSERT INTO participants VALUES (1, 'Mariya', 'Rudzko', '1990', 'BY', 'grand-master', '300', 'FEMALE');
+INSERT INTO participants VALUES (2, 'Katsyarina', 'Rudzko', '1986', 'BY', 'master', '270', 'FEMALE');
+INSERT INTO participants VALUES (3, 'Pavel', 'Kurmaz', '1983', 'BY', 'master', '270', 'MALE');
+
+
