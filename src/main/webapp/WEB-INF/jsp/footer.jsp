@@ -1,11 +1,16 @@
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <footer>
   <p>
-    <a href="<spring:url value="/" htmlEscape="true" />">Home</a>
-    <img src="<spring:url value="/static/images/springsource-logo.png" htmlEscape="true" />" alt="Sponsored by SpringSource"/>
+
+  <p>
+    <strong style="color: orange;">FOOTER</strong>
+  </p>
+  <a href="<spring:url value="/" htmlEscape="true" />">Home</a>
   </p>
 </footer>
 
-</div>
 </body>
 
 </html>

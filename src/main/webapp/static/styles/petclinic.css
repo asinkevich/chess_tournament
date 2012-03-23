@@ -7,8 +7,7 @@ body, div, td {
 }
 
 body {
-  background-color: #fff;
-  background-image: url(../images/banner-graphic.png);
+  background: rgb(2, 2, 2) url(../images/bg-top.jpg) 50% 0 no-repeat;
   background-position: top center;
   background-repeat: no-repeat;
   text-align: center;

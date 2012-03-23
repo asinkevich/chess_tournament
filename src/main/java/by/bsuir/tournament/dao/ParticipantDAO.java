@@ -6,9 +6,9 @@ import org.springframework.dao.DataAccessException;
 import java.util.Collection;
 
 public interface ParticipantDAO {
-  Collection<Participant> findAllParticipants() throws DataAccessException;
-
   Collection<Participant> findAllFemaleParticipants() throws DataAccessException;
 
   Collection<Participant> findAllMaleParticipants() throws DataAccessException;
+
+  void storeParticipant(Participant participant) throws DataAccessException;
 }

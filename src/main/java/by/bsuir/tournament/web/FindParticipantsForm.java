@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class ParticipantsController {
+public class FindParticipantsForm {
   private ParticipantDAO participantDAO;
 
   @Autowired
-  public ParticipantsController(ParticipantDAO participantDAO) {
+  public FindParticipantsForm(ParticipantDAO participantDAO) {
     this.participantDAO = participantDAO;
   }
 

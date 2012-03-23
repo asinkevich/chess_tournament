@@ -21,13 +21,6 @@ public class HibernateParticipantDAO implements ParticipantDAO {
   @Override
   @Transactional(readOnly = true)
   @SuppressWarnings("unchecked")
-  public Collection<Participant> findAllParticipants() throws DataAccessException {
-    return sessionFactory.getCurrentSession().createQuery("from Participant participant").list();
-  }
-
-  @Override
-  @Transactional(readOnly = true)
-  @SuppressWarnings("unchecked")
   public Collection<Participant> findAllFemaleParticipants() throws DataAccessException {
     return findAllParticipantsByGender(Gender.FEMALE);
   }
@@ -42,6 +35,12 @@ public class HibernateParticipantDAO implements ParticipantDAO {
   @SuppressWarnings("unchecked")
   private Collection<Participant> findAllParticipantsByGender(Gender gender) throws DataAccessException {
     return sessionFactory.getCurrentSession().createQuery("from Participant participant where participant.gender like :gender")
-        .setString("gender", gender.name()).list();
+            .setString("gender", gender.name()).list();
+  }
+
+  @Override
+  @Transactional
+  public void storeParticipant(Participant participant) {
+    sessionFactory.getCurrentSession().merge(participant);
   }
 }

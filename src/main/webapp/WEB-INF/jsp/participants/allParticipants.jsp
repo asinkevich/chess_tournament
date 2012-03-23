@@ -12,6 +12,6 @@
 <c:set var="participants" value="${boys}"/>
 <%@ include file="/WEB-INF/jsp/participants/table.jsp" %>
 
-
+<a href='<spring:url value="/participants/new" htmlEscape="true"/>'>Add Participant</a>
 
 <%@ include file="/WEB-INF/jsp/footer.jsp" %>

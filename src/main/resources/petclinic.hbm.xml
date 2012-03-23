@@ -90,6 +90,7 @@
     <property name="country" column="country">
       <type name="org.hibernate.type.EnumType">
         <param name="enumClass">by.bsuir.tournament.model.Country</param>
+        <param name="type">12</param>
       </type>
     </property>
     <property name="title" column="title"/>
@@ -97,6 +98,7 @@
     <property name="gender" column="gender">
       <type name="org.hibernate.type.EnumType">
         <param name="enumClass">by.bsuir.tournament.model.Gender</param>
+        <param name="type">12</param>
       </type>
     </property>
   </class>
