@@ -2,13 +2,13 @@
 <%@ include file="/WEB-INF/jsp/header.jsp" %>
 <%@ include file="/WEB-INF/jsp/menu.jsp" %>
 
-<h1>News</h1>
+<h2>News</h2>
 
 <c:forEach var="newsArticle" items="${news}">
   <article>
     <header>
-      <h2>${newsArticle.name}</h2>
-      <h3><fmt:formatDate value="${newsArticle.date}"/></h3>
+      <h3>${newsArticle.name}</h3>
+      <h4><fmt:formatDate value="${newsArticle.date}"/></h4>
     </header>
     <section>
       <p>${newsArticle.text}</p>

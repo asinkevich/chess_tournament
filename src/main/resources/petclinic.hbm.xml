@@ -102,4 +102,14 @@
       </type>
     </property>
   </class>
+
+  <class name="by.bsuir.tournament.model.Party" table="parties">
+    <id name="id" column="id">
+      <generator class="identity"/>
+    </id>
+    <many-to-one name="firstPlayer" column="first_player_id" class="by.bsuir.tournament.model.Participant"/>
+    <many-to-one name="secondPlayer" column="second_player_id" class="by.bsuir.tournament.model.Participant"/>
+    <property name="firstPlayerScore" column="first_player_score" type="integer"/>
+    <property name="secondPlayerScore" column="second_player_score" type="integer"/>
+  </class>
 </hibernate-mapping>

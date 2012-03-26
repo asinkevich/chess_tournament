@@ -25,7 +25,7 @@ public class AddParticipantForm {
   }
 
   @InitBinder
-  public void setAllowedFields(WebDataBinder dataBinder) {
+  public void setDisallowedFields(WebDataBinder dataBinder) {
     dataBinder.setDisallowedFields("id");
   }
 

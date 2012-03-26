@@ -13,7 +13,7 @@
       <a href=""><fmt:message key="menu.regulations"/></a>
     </li>
     <li>
-      <a href=""><fmt:message key="menu.parties"/></a>
+      <a href="<spring:url value="/parties" htmlEscape="true" />"><fmt:message key="menu.parties"/></a>
     </li>
     <li>
       <a href=""><fmt:message key="menu.results_tables"/></a>

@@ -72,6 +72,7 @@
   <bean id="clinic" class="org.springframework.samples.petclinic.hibernate.HibernateClinic"/>
   <bean id="tournamentDAO" class="by.bsuir.tournament.dao.hibernate.HibernateTournamentDAO"/>
   <bean id="participantDAO" class="by.bsuir.tournament.dao.hibernate.HibernateParticipantDAO"/>
+  <bean id="partiesService" class="by.bsuir.tournament.dao.hibernate.HibernatePartiesDAO"/>
 
   <!-- Hibernate's JMX statistics service -->
   <bean name="petclinic:type=HibernateStatistics" class="org.hibernate.jmx.StatisticsService" autowire="byName"/>
