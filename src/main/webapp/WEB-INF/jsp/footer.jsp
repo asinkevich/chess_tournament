@@ -1,11 +1,8 @@
 </div>
 </div>
 
-<footer>
-  <p>
-    <strong style="color: orange;">FOOTER</strong>
-  </p>
-  <a href="<spring:url value="/" htmlEscape="true" />">Home</a>
+<footer class="clearFix">
+    <p>Copyright &copy; 2012 by <a target="_blank" href="mailto: myr-kat@bk.ru">Maryia Rudzko</a></p>
 </footer>
 
 </body>
