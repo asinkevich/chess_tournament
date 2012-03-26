@@ -1,44 +1,114 @@
 /* main elements */
 
 body, div, td {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
   color: #666;
 }
 
-body {
-  background: rgb(2, 2, 2) url(../images/bg-top.jpg) 50% 0 no-repeat;
-  background-position: top center;
-  background-repeat: no-repeat;
-  text-align: center;
-  min-width: 600px;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-div {
-  margin: 5px 25px 5px 25px;
-  text-align: left;
+body {
+  background: black url(../images/blackBG.jpg) repeat top left;
+  margin: 0;
+  padding: 0;
+  border-top: 7px solid #FFD200;
+  font: 62.5%/1.4 Verdana, Arial, Helvetica, sans-serif;
+  position: relative;
+  height: 100%;
+}
+
+body > img {
+  position: absolute;
+  z-index: -1;
+}
+
+/* main site colors */
+.firstSiteColor, header #tournamentName span, header #tournamentInfo p:first-child, nav li a {
+  color: #ffffff;
+}
+
+.secondSiteColor, header #tournamentName h1, header #tournamentInfo p, a:hover {
+  color: #ffd200;
 }
 
 /* header and footer elements */
-
-#main {
+header, #main {
   margin: 0 auto;
   position: relative;
-  top: 35px;
+  top: 0px;
   left: 0px;
-  width: 560px;
+  width: 960px;
+}
+
+#main {
+  margin-top: 20px;
   text-align: left;
 }
 
-.footer {
-  background: #fff;
-  border: none;
-  margin-top: 20px;
-  border-top: 1px solid #999999;
+header {
+  height: 70px;
+}
+
+header #tournamentName {
+  float: left;
+  width: 70%;
+}
+
+header #tournamentName span {
+  font-size: 1.2em;
+  display: block;
+  margin-top: -5px;
+}
+
+header #tournamentInfo {
+  background-color: #504C41;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  height: 35px;
+  padding: 5px 0;
+  text-align: center;
+  width: 30%;
+  float: right;
+  font-size: 1.2em;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+   list-style: none;
+}
+
+nav ul li {
+  padding: 10px 0px;
+  border-bottom: 1px dashed #565348;
+}
+
+nav ul li:first-child {
+  border-top: 1px dashed #565348;
+}
+
+nav ul li a {
+  padding: 5px 5px 5px 15px;
+  display: block;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+#contentWrapper {
+  width: 85%;
+  background-color: #ffffff;
+}
+
+footer {
   width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .footer td {
@@ -57,8 +127,10 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 4em;
+  letter-spacing: -3px;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -85,26 +157,6 @@ h4 {
 a {
   text-decoration: underline;
   font-size: 13px;
-}
-
-a:link {
-  color: #7db223;
-}
-
-a:hover {
-  color: #456314;
-}
-
-a:active {
-  color: #7db223;
-}
-
-a:visited {
-  color: #7db223;
-}
-
-ul {
-  list-style: disc url(../images/bullet-arrow.png);
 }
 
 li {

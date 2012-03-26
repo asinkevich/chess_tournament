@@ -7,11 +7,18 @@
 </head>
 
 <body>
+  <img style="left: 0;" src="/static/images/chessLeftBG.png">
+  <img style="right: 0;" src="/static/images/chessRightBG.png">
 
 <header>
-  <p>
-    <strong style="color: orange;">HEADER</strong>
-  </p>
+  <div id="tournamentName">
+    <h1>Чемпионат мира по шашкам</h1>
+    <span>среди миникадетов (юноши, девушки 1999 года рождения и моложе)</span>
+  </div>
+  <div id="tournamentInfo">
+    <p>4 - 10 January 2012</p>
+    <p>Slonim, Belarus</p>
+  </div>
 </header>
 
 <div id="main">

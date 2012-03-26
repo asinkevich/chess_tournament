@@ -4,25 +4,26 @@
       <a href="<spring:url value="/news" htmlEscape="true" />"><fmt:message key="menu.news"/></a>
     </li>
     <li>
-      <fmt:message key="menu.program"/>
+      <a href=""><fmt:message key="menu.program"/></a>
     </li>
     <li>
       <a href="<spring:url value="/participants" htmlEscape="true" />"><fmt:message key="menu.participants"/></a>
     </li>
     <li>
-      <fmt:message key="menu.regulations"/>
+      <a href=""><fmt:message key="menu.regulations"/></a>
     </li>
     <li>
-      <fmt:message key="menu.parties"/>
+      <a href=""><fmt:message key="menu.parties"/></a>
     </li>
     <li>
-      <fmt:message key="menu.results_tables"/>
+      <a href=""><fmt:message key="menu.results_tables"/></a>
     </li>
     <li>
-      <fmt:message key="menu.gallery"/>
+      <a href=""><fmt:message key="menu.gallery"/></a>
     </li>
     <li>
-      <fmt:message key="menu.contacts"/>
+      <a href=""><fmt:message key="menu.contacts"/></a>
     </li>
   </ul>
 </nav>
+<div id="contentWrapper">
