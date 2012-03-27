@@ -4,6 +4,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <link rel="stylesheet" href="<spring:url value="/static/styles/petclinic.css" htmlEscape="true" />" type="text/css"/>
+  <link rel="stylesheet" href="<spring:url value="/static/styles/jquery.ui.datepicker.css" htmlEscape="true" />" type="text/css"/>
+  <link rel="stylesheet" href="<spring:url value="/static/styles/jquery.ui.theme.css" htmlEscape="true" />" type="text/css"/>
+  <script type="text/javascript" src="<spring:url value="/static/javascript/jquery-1.7.1.js" htmlEscape="true" />" ></script>
+  <script type="text/javascript" src="<spring:url value="/static/javascript/jquery.ui.datepicker.js" htmlEscape="true" />" ></script>
 </head>
 
 <body>

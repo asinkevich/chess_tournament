@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/header.jsp" %>
 <%@ include file="/WEB-INF/jsp/menu.jsp" %>
 
-<h1>Participants</h1>
+<h2>Participants</h2>
 
 <c:set var="title" value="Girls"/>
 <c:set var="participants" value="${girls}"/>

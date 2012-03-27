@@ -9,7 +9,7 @@
 
 <h2><c:if test="${participant.new}">New&nbsp;</c:if>Participant:</h2>
 <form:form modelAttribute="participant" method="${method}">
-  <table>
+  <table class="newDataForm">
     <tr>
       <th>
         First Name: <form:errors path="firstName" cssClass="errors"/>

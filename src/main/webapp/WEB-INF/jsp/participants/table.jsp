@@ -1,5 +1,5 @@
-<h2>${title}:</h2>
-<table>
+<h3>${title}:</h3>
+<table class="newDataForm">
   <thead>
   <th>Name</th>
   <th>Country</th>
