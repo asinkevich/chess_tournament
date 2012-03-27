@@ -16,4 +16,6 @@
   </article>
 </c:forEach>
 
+<a href='<spring:url value="/news/new" htmlEscape="true"/>'>Add News</a>
+
 <%@ include file="/WEB-INF/jsp/footer.jsp" %>

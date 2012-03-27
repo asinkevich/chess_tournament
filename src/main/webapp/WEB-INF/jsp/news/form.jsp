@@ -29,6 +29,11 @@
             </script>
         </td>
     </tr>
+    <tr>
+        <td>
+            <p class="submit"><input type="submit" value="Add News"/></p>
+        </td>
+    </tr>
 
 </table>
 
