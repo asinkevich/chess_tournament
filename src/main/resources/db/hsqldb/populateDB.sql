@@ -80,15 +80,15 @@ INSERT INTO parties VALUES (2, 3, 4, 0, 0);
 INSERT INTO parties VALUES (3, 5, 6, 0, 0);
 INSERT INTO parties VALUES (4, 7, 8, 0, 0);
 
-INSERT INTO tours VALUES (1, 0);
-INSERT INTO tours VALUES (2, 1);
+INSERT INTO tours VALUES (1, 1);
+INSERT INTO tours VALUES (2, 2);
 
 INSERT INTO tour_parties VALUES (1, 1);
 INSERT INTO tour_parties VALUES (1, 2);
 INSERT INTO tour_parties VALUES (1, 3);
 INSERT INTO tour_parties VALUES (2, 4);
 
-INSERT INTO tournaments VALUES (1, 'Tournament name', 'Place name');
+INSERT INTO tournaments VALUES (1, 'World Championship', 'Minsk, Belarus');
 
 INSERT INTO tournaments_participants VALUES (1, 1);
 INSERT INTO tournaments_participants VALUES (1, 2);

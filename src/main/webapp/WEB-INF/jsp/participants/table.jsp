@@ -1,4 +1,3 @@
-<h3>${title}:</h3>
 <table class="newDataForm">
   <thead>
   <th>Name</th>

@@ -61,4 +61,13 @@ public class Tournament extends BaseEntity {
     PropertyComparator.sort(sortedTours, new MutableSortDefinition("index", true, true));
     return sortedTours;
   }
+
+  public List<Participant> getCommonParticipants() {
+    List<TournamentParticipant> participants = getParticipants();
+    List<Participant> commonParticipants = new ArrayList<Participant>(participants.size());
+    for (TournamentParticipant tournamentParticipant : participants) {
+      commonParticipants.add(tournamentParticipant.getParticipant());
+    }
+    return Collections.unmodifiableList(commonParticipants);
+  }
 }

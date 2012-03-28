@@ -4,11 +4,11 @@
 
 <h2>Participants</h2>
 
-<c:set var="title" value="Girls"/>
+<h3>Girls:</h3>
 <c:set var="participants" value="${girls}"/>
 <%@ include file="/WEB-INF/jsp/participants/table.jsp" %>
 
-<c:set var="title" value="Boys"/>
+<h3>Boys:</h3>
 <c:set var="participants" value="${boys}"/>
 <%@ include file="/WEB-INF/jsp/participants/table.jsp" %>
 

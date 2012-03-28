@@ -30,4 +30,11 @@ public class TournamentsController {
     mav.addObject(tournamentService.loadTournament(tournamentId));
     return mav;
   }
+
+  @RequestMapping("/tournaments/*/{tourId}")
+  public ModelAndView tourHandler(@PathVariable("tourId") int tourId) {
+    ModelAndView mav = new ModelAndView("tournaments/tour");
+    mav.addObject(tournamentService.loadTour(tourId));
+    return mav;
+  }
 }
