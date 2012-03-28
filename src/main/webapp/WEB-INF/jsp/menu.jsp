@@ -16,7 +16,7 @@
       <a href="<spring:url value="/parties" htmlEscape="true" />"><fmt:message key="menu.parties"/></a>
     </li>
     <li>
-      <a href=""><fmt:message key="menu.results_tables"/></a>
+      <a href="<spring:url value="/tournaments" htmlEscape="true" />"><fmt:message key="menu.results_tables"/></a>
     </li>
     <li>
       <a href=""><fmt:message key="menu.gallery"/></a>

@@ -70,7 +70,7 @@
 
   <!-- PetClinic's central data access object: Hibernate implementation -->
   <bean id="clinic" class="org.springframework.samples.petclinic.hibernate.HibernateClinic"/>
-  <bean id="tournamentDAO" class="by.bsuir.tournament.dao.hibernate.HibernateTournamentDAO"/>
+  <bean id="tournamentService" class="by.bsuir.tournament.dao.hibernate.HibernateTournamentDAO"/>
   <bean id="participantDAO" class="by.bsuir.tournament.dao.hibernate.HibernateParticipantDAO"/>
   <bean id="partiesService" class="by.bsuir.tournament.dao.hibernate.HibernatePartiesDAO"/>
 

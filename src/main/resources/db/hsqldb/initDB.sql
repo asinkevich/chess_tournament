@@ -74,13 +74,56 @@ CREATE TABLE participants (
 );
 CREATE INDEX participants_last_name ON participants(last_name);
 
+
+CREATE TABLE tournament_participants (
+  id INTEGER NOT NULL IDENTITY PRIMARY KEY,
+  participant_id INTEGER,
+  score INTEGER
+);
+alter table tournament_participants add constraint fk_tournament_participant foreign key (participant_id) references participants(id);
+
+
 CREATE TABLE parties (
 	id INTEGER NOT NULL IDENTITY PRIMARY KEY,
 	first_player_id INTEGER NOT NULL,
 	second_player_id INTEGER NOT NULL,
 	first_player_score INTEGER DEFAULT 0,
-    second_player_score INTEGER DEFAULT 0
+  second_player_score INTEGER DEFAULT 0
 );
-alter table parties add constraint fk_parties_first_player foreign key (first_player_id) references participants(id);
-alter table parties add constraint fk_parties_second_player foreign key (second_player_id) references participants(id);
+alter table parties add constraint fk_parties_first_player foreign key (first_player_id) references tournament_participants(id);
+alter table parties add constraint fk_parties_second_player foreign key (second_player_id) references tournament_participants(id);
 CREATE INDEX parties_participants_id ON parties(first_player_id, second_player_id);
+
+
+CREATE TABLE tours (
+	id INTEGER NOT NULL IDENTITY PRIMARY KEY,
+  tour_index INTEGER NOT NULL
+);
+
+CREATE TABLE tour_parties (
+	tour_id INTEGER NOT NULL,
+	party_id INTEGER NOT NULL
+);
+alter table tour_parties add constraint fk_tour_parties_tours foreign key (tour_id) references tours(id);
+alter table tour_parties add constraint fk_tour_parties_parties foreign key (party_id) references parties(id);
+
+CREATE TABLE tournaments (
+  id INTEGER NOT NULL IDENTITY PRIMARY KEY,
+  tournament_name VARCHAR(256),
+  place VARCHAR(256)
+);
+CREATE INDEX tournaments_tournament_name ON tournaments(tournament_name);
+
+CREATE TABLE tournaments_participants (
+	tournament_id INTEGER NOT NULL,
+	tournament_participant_id INTEGER NOT NULL
+);
+alter table tournaments_participants add constraint fk_tournaments_participants_tournaments foreign key (tournament_id) references tournaments(id);
+alter table tournaments_participants add constraint fk_tournaments_participants_participants foreign key (tournament_participant_id) references tournament_participants(id);
+
+CREATE TABLE tournament_tours (
+	tournament_id INTEGER NOT NULL,
+	tour_id INTEGER NOT NULL
+);
+alter table tournament_tours add constraint fk_tournament_tours_tournaments foreign key (tournament_id) references tournaments(id);
+alter table tournament_tours add constraint fk_tournament_tours_tours foreign key (tour_id) references tours(id);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
-        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <!--
   - Mapping file for the Hibernate implementation of the Clinic interface.
@@ -103,13 +103,48 @@
     </property>
   </class>
 
+  <class name="by.bsuir.tournament.model.TournamentParticipant" table="tournament_participants">
+    <id name="id" column="id">
+      <generator class="identity"/>
+    </id>
+    <many-to-one name="participant" column="participant_id" class="by.bsuir.tournament.model.Participant"/>
+    <property name="score" column="score" type="integer"/>
+  </class>
+
   <class name="by.bsuir.tournament.model.Party" table="parties">
     <id name="id" column="id">
       <generator class="identity"/>
     </id>
-    <many-to-one name="firstPlayer" column="first_player_id" class="by.bsuir.tournament.model.Participant"/>
-    <many-to-one name="secondPlayer" column="second_player_id" class="by.bsuir.tournament.model.Participant"/>
+    <many-to-one name="firstPlayer" column="first_player_id" class="by.bsuir.tournament.model.TournamentParticipant"/>
+    <many-to-one name="secondPlayer" column="second_player_id" class="by.bsuir.tournament.model.TournamentParticipant"/>
     <property name="firstPlayerScore" column="first_player_score" type="integer"/>
     <property name="secondPlayerScore" column="second_player_score" type="integer"/>
+  </class>
+
+  <class name="by.bsuir.tournament.model.Tour" table="tours">
+    <id name="id" column="id">
+      <generator class="identity"/>
+    </id>
+    <property name="index" column="tour_index" type="integer"/>
+    <set name="parties" table="tour_parties">
+      <key column="tour_id"/>
+      <many-to-many column="party_id" class="by.bsuir.tournament.model.Party"/>
+    </set>
+  </class>
+
+  <class name="by.bsuir.tournament.model.Tournament" table="tournaments">
+    <id name="id" column="id">
+      <generator class="identity"/>
+    </id>
+    <property name="name" column="tournament_name"/>
+    <property name="place" column="place"/>
+    <set name="participantsInternal" table="tournaments_participants">
+      <key column="tournament_id"/>
+      <many-to-many column="tournament_participant_id" class="by.bsuir.tournament.model.TournamentParticipant"/>
+    </set>
+    <set name="toursInternal" table="tournament_tours">
+      <key column="tournament_id"/>
+      <many-to-many column="tour_id" class="by.bsuir.tournament.model.Tour"/>
+    </set>
   </class>
 </hibernate-mapping>

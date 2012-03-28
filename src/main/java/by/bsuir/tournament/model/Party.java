@@ -4,24 +4,24 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 import org.springframework.samples.petclinic.BaseEntity;
 
 public class Party extends BaseEntity {
-  private Participant firstPlayer;
-  private Participant secondPlayer;
+  private TournamentParticipant firstPlayer;
+  private TournamentParticipant secondPlayer;
   private int firstPlayerScore;
   private int secondPlayerScore;
 
-  public Participant getFirstPlayer() {
+  public TournamentParticipant getFirstPlayer() {
     return firstPlayer;
   }
 
-  public void setFirstPlayer(Participant firstPlayer) {
+  public void setFirstPlayer(TournamentParticipant firstPlayer) {
     this.firstPlayer = firstPlayer;
   }
 
-  public Participant getSecondPlayer() {
+  public TournamentParticipant getSecondPlayer() {
     return secondPlayer;
   }
 
-  public void setSecondPlayer(Participant secondPlayer) {
+  public void setSecondPlayer(TournamentParticipant secondPlayer) {
     this.secondPlayer = secondPlayer;
   }
 
@@ -45,8 +45,8 @@ public class Party extends BaseEntity {
   public String toString() {
     return new ToStringBuilder(this)
         .append("id", getId())
-        .append("firstPlayer", getFirstPlayer().getLastName())
-        .append("secondPlayer", getSecondPlayer().getLastName())
+        .append("firstPlayer", getFirstPlayer().getParticipant().getLastName())
+        .append("secondPlayer", getSecondPlayer().getParticipant().getLastName())
         .append("score", getFirstPlayerScore() + "-" + getSecondPlayerScore())
         .toString();
   }

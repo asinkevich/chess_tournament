@@ -60,5 +60,44 @@ INSERT INTO news VALUES (2, 'Article 2', 'text 2', '1996-09-04');
 INSERT INTO participants VALUES (1, 'Mariya', 'Rudzko', '1990', 'BY', 'grand-master', '300', 'FEMALE');
 INSERT INTO participants VALUES (2, 'Katsyarina', 'Rudzko', '1986', 'BY', 'master', '270', 'FEMALE');
 INSERT INTO participants VALUES (3, 'Pavel', 'Kurmaz', '1983', 'BY', 'master', '270', 'MALE');
+INSERT INTO participants VALUES (4, 'Pavel2', 'Kurmaz2', '1983', 'BY', 'master', '270', 'MALE');
+INSERT INTO participants VALUES (5, 'Pavel3', 'Kurmaz3', '1983', 'BY', 'master', '270', 'MALE');
+INSERT INTO participants VALUES (6, 'Pavel4', 'Kurmaz4', '1983', 'BY', 'master', '270', 'MALE');
+INSERT INTO participants VALUES (7, 'Pavel5', 'Kurmaz5', '1983', 'BY', 'master', '270', 'MALE');
+INSERT INTO participants VALUES (8, 'Pavel6', 'Kurmaz6', '1983', 'BY', 'master', '270', 'MALE');
 
-INSERT INTO parties VALUES (1, 1, 2, 2, 1);
+INSERT INTO tournament_participants VALUES (1, 1, 0);
+INSERT INTO tournament_participants VALUES (2, 2, 0);
+INSERT INTO tournament_participants VALUES (3, 3, 0);
+INSERT INTO tournament_participants VALUES (4, 4, 0);
+INSERT INTO tournament_participants VALUES (5, 5, 0);
+INSERT INTO tournament_participants VALUES (6, 6, 0);
+INSERT INTO tournament_participants VALUES (7, 7, 0);
+INSERT INTO tournament_participants VALUES (8, 8, 0);
+
+INSERT INTO parties VALUES (1, 1, 2, 0, 0);
+INSERT INTO parties VALUES (2, 3, 4, 0, 0);
+INSERT INTO parties VALUES (3, 5, 6, 0, 0);
+INSERT INTO parties VALUES (4, 7, 8, 0, 0);
+
+INSERT INTO tours VALUES (1, 0);
+INSERT INTO tours VALUES (2, 1);
+
+INSERT INTO tour_parties VALUES (1, 1);
+INSERT INTO tour_parties VALUES (1, 2);
+INSERT INTO tour_parties VALUES (1, 3);
+INSERT INTO tour_parties VALUES (2, 4);
+
+INSERT INTO tournaments VALUES (1, 'Tournament name', 'Place name');
+
+INSERT INTO tournaments_participants VALUES (1, 1);
+INSERT INTO tournaments_participants VALUES (1, 2);
+INSERT INTO tournaments_participants VALUES (1, 3);
+INSERT INTO tournaments_participants VALUES (1, 4);
+INSERT INTO tournaments_participants VALUES (1, 5);
+INSERT INTO tournaments_participants VALUES (1, 6);
+INSERT INTO tournaments_participants VALUES (1, 7);
+INSERT INTO tournaments_participants VALUES (1, 8);
+
+INSERT INTO tournament_tours VALUES (1, 1);
+INSERT INTO tournament_tours VALUES (1, 2);
